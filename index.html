@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>欢迎访问兆日科技官方网站 - Welcome to Sinosun Technology</title>
+<meta name="keywords" content="兆日科技,兆日,安全芯片,TCG,TPM,SSX35,支付安全,防伪技术,智能终端,可信计算组织,TPM1.2标准,安全产业链,安全PC,信息安全,商用密码">
+<meta name="description" content="兆日科技致力于信息安全产品的研发和生产，是国内的主要安全解决方案供应商。将核心的安全技术和先进的移动互联产品大面积地应用于金融和各个商业领域, 是兆日人明天的目标和梦想。">
+<link rel="stylesheet" href="css/global.css" />
+<link rel="stylesheet" href="css/index.css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/global.js"></script>
+<script type="text/javascript" src="js/uaredirect.js"></script>
+<script type="text/javascript">uaredirect("http://www.sinosun.com.cn/mobile/");</script>
+<script type="text/javascript" src="js/superslide.2.1.js"></script>
+<script>
+$(document).ready(function() {
+  //4个产品悬停
+  $('.section li').hover(function() {
+	  $(this).find('div.rsp').stop(false,true).fadeIn(200);
+  },
+  function() {
+	  $(this).find('div.rsp').stop(false,true).fadeOut(200);
+  });
+
+});
+</script>
+</head>
+<body>
+<div id="intop">
+
+<!--=============浮动导航===============-->
+<div id="header_f2">
+  <div id="header_whbg"></div>
+  <div id="header_mainfix">
+    <div class="center">
+      <div id="sinologofix"><a href="/" title="返回首页" ></a></div>
+      <div id="menuboxfix" class="menu">
+        <ul class="nav">
+          <li><a href="/paperprint/">纸纹防伪</a></li>
+          <li><a href="/mpayment/">移动支付</a></li>
+          <li><a href="/mstp/">移动互联</a></li>
+          <li><a href="/dss/">支付安全</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="header_line"></div>
+</div>
+
+<!--=============头部导航===============-->
+<div id="header_f1">
+  <div id="header_blbg"></div>
+  <div id="header_main">
+    <div class="center">
+      <div id="sinologo"><a href="/" title="返回首页" ></a></div>
+      <div id="menubox" class="menu">
+        <ul class="nav">
+          <li><a href="/paperprint/">纸纹防伪</a></li>
+          <li><a href="/mpayment/">移动支付</a></li>
+          <li><a href="/mstp/">移动互联</a></li>
+          <li><a href="/dss/">支付安全</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--=============大轮换图===============-->
+<div class="fullSlide">
+	<div class="bd">
+		<ul>
+			<li _src="url(images/ban1.jpg)" style="background-repeat:no-repeat;"><a href="paperprint/index.html"></a></li>
+			<li _src="url(images/ban2.jpg)" style="background-repeat:no-repeat;"><a href="mpayment/index.html"></a></li>
+			<li _src="url(images/ban3.jpg)" style="background-repeat:no-repeat;"><a href="mstp/index.html"></a></li>
+			<li _src="url(images/ban4.jpg)" style="background-repeat:no-repeat;"><a href="mstp/index.html"></a></li>
+            <li _src="url(images/ban5.jpg)" style="background-repeat:no-repeat;"><a href="dss/index.html"></a></li>
+		</ul>
+	</div>
+	<div class="hd"><ul></ul></div>
+	<span class="prev"></span>
+	<span class="next"></span>
+</div>
+</div>
+<!--fullSlide end-->
+<script type="text/javascript">
+$(".fullSlide").hover(function(){
+    $(this).find(".prev,.next").stop(true, true).fadeTo("show", 1.5)
+},
+function(){
+    $(this).find(".prev,.next").fadeOut()
+});
+$(".fullSlide").slide({
+    titCell: ".hd ul",
+    mainCell: ".bd ul",
+    effect: "fold",
+    autoPlay: true,
+    autoPage: true,
+    trigger: "click",
+    startFun: function(i) {
+        var curLi = jQuery(".fullSlide .bd li").eq(i);
+        if ( !! curLi.attr("_src")) {
+            curLi.css("background-image", curLi.attr("_src")).removeAttr("_src")
+        }
+    }
+});
+</script>
+
+<!--=============4个产品===============-->
+<div class="section">
+  <ul class="clearfix">
+    <li>
+      <a href="paperprint.html" target="_blank">
+        <div class="photo"><img src="images/fourbtn_01.jpg" /><div class="phtxt">票据纸纹<span class="cop">®</span>防伪系统</div></div>
+        <div class="rsp"><div class="txt">无法攻破的防伪技术</div></div>
+      </a>
+    </li>
+    <li>
+      <a href="bank.html" target="_blank">
+        <div class="photo"><img src="images/fourbtn_02.jpg" /><div class="phtxt" style="color:#000;">银企通<span class="cop">®</span></div></div>
+        <div class="rsp"><div class="txt">便捷企业对公支付，助力银行提升服务</div></div>
+        <div class="text"></div>
+      </a>
+    </li>
+    <li>
+      <a href="net.html" target="_blank">
+        <div class="photo"><img src="images/fourbtn_03.jpg" /><div class="phtxt">T信<span class="cop">®</span></div></div>
+        <div class="rsp"><div class="txt">不是简单的社交工具，她是企业专属的工作空间</div></div>
+      </a>
+    </li>
+    <li>
+      <a href="safe.html" target="_blank">
+        <div class="photo"><img src="images/fourbtn_04.jpg" /><div class="phtxt" style="color:#000;">多功能密码器</div></div>
+        <div class="rsp"><div class="txt">All in one 移动支付安全神器</div></div>
+      </a>
+    </li>		
+  </ul>
+  <div class="clear"></div>
+</div>
+
+
+<!--=============我们的客户===============-->
+<div id="custop"><div class="center"><img src="images/custop.gif"/></div></div>
+<div class="center"><img src="images/cuslogo.gif" /></div>
+
+<!--=============底部===============-->
+<div id="footer">
+  <div class="center">
+    <div id="footerleft">
+      <div id="footermenu">
+        <ul>
+          <li><a href="/aboutus/">公司简介</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+          <li><a href="/investor/">投资者关系</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+          <li><a href="/techdl.asp">技术支持</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+          <li><a href="/terms/">法律声明</a></li>
+        </ul>
+      </div><div class="clear"></div>
+
+        <div id="copyright">©2016兆日科技版权所有 <span style="padding:0 15px 0 10px;">鲁ICP备 <a href="http://www.miitbeian.gov.cn" target="_blank" rel="nofollow" style="color:#cacaca; font-family:'微软雅黑'; font-size:12px;">09048172</a>号</span>服务热线：400-0808-887</div>
+
+    </div>
+      
+    <div class="footeradd">
+      <div>地址：济南市商贸科技大厦C座16层<br />电话：0531-83415666 <span style="padding-left:15px;">传真：0531-83420054</span></div>
+    </div>
+      
+  </div>  
+</div>
+
+
+
+<!-- 回到头部 -->
+<div id="returnbtn"><a id="return" href="javascript:void(0)" onclick="jQuery('html,body').animate({scrollTop: 0}, 800);"></a></div>
+<!--51la-->
+<div style="display:none;"><script language="javascript" type="text/javascript" src="js/17852147.js"></script>
+<noscript><a href="http://www.51.la/?17852147" target="_blank"><img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="images/17852147.asp" style="border:none" /></a></noscript></div>
+</body>
+</html>

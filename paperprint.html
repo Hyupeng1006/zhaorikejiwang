@@ -1,0 +1,283 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>纸纹特征识别 - 兆日科技</title>
+  <meta name="keywords" content="纸纹,纸纹防伪,纸纹特征,特征识别,票据防伪,商品防伪,纸纹DNA,纸纹防伪技术,票据防伪技术,防克隆,防伪造,防变造,PaperPrint">
+  <meta name="description" content="兆日科技历经10余年研发，解决了纸张自然纤维纹理特征的信息提取和特征模型的算法构造难题，成功发明了世界领先的"纸纹"特征识别技术。并不断推出基于纸纹技术的防伪产品，他们可广泛适用于票据防伪，商品防伪等领域。">
+  <link rel="stylesheet" href="css/global_1.css" />
+  <link rel="stylesheet" href="css/pro.css" />
+  <link rel="stylesheet" href="css/paper.css" />
+  <link rel="icon" href="http://www.sinosun.com/favicon.ico" type="image/x-icon" />
+  <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="js/global.js"></script>
+  <script type="text/javascript" src="js/uaredirect.js"></script>
+  <script type="text/javascript">uaredirect("http://www.sinosun.com.cn/mobile/paperprint/");</script>
+  <script type="text/javascript" src="js/api.lib.min.js"></script>
+  <script type="text/javascript">
+    //弹出窗口
+    function showid(idname){
+      var isIE = (document.all) ? true : false;
+      var isIE6 = isIE && ([/MSIE (\d)\.0/i.exec(navigator.userAgent)][0][1] == 6);
+      var newbox=document.getElementById(idname);
+      newbox.style.zIndex="9999";
+      newbox.style.display="block"
+      newbox.style.position = !isIE6 ? "fixed" : "absolute";
+      newbox.style.top =newbox.style.left = "50%";
+      newbox.style.marginTop = - newbox.offsetHeight / 2 + "px";
+      newbox.style.marginLeft = - newbox.offsetWidth / 2 + "px";
+      var layer=document.createElement("div");
+      layer.id="layer";
+      layer.style.width=layer.style.height="100%";
+      layer.style.position= !isIE6 ? "fixed" : "absolute";
+      layer.style.top=layer.style.left=0;
+      layer.style.backgroundColor="#000";
+      layer.style.zIndex="9998";
+      layer.style.opacity="0.7";
+      document.body.appendChild(layer);
+      var sel=document.getElementsByTagName("select");
+      for(var i=0;i<sel.length;i++){
+        sel[i].style.visibility="hidden";
+      }
+      function layer_iestyle(){
+        layer.style.width=Math.max(document.documentElement.scrollWidth, document.documentElement.clientWidth)
+                + "px";
+        layer.style.height= Math.max(document.documentElement.scrollHeight, document.documentElement.clientHeight) +
+                "px";
+      }
+      function newbox_iestyle(){
+        newbox.style.marginTop = document.documentElement.scrollTop - newbox.offsetHeight / 2 + "px";
+        newbox.style.marginLeft = document.documentElement.scrollLeft - newbox.offsetWidth / 2 + "px";
+      }
+      if(isIE){layer.style.filter ="alpha(opacity=70)";}
+      if(isIE6){
+        layer_iestyle()
+        newbox_iestyle();
+        window.attachEvent("onscroll",function(){
+          newbox_iestyle();
+        })
+        window.attachEvent("onresize",layer_iestyle)
+      }
+      layer.onclick=function(){newbox.style.display="none";layer.style.display="none";for(var i=0;i<sel.length;i++){
+        sel[i].style.visibility="visible";
+      }}
+    }
+  </script>
+</head>
+<body>
+<!--=============浮动导航===============-->
+<div id="header_f2">
+  <div id="header_whbg"></div>
+  <div id="header_mainfix">
+    <div class="center">
+      <div id="sinologofix"><a href="/" title="返回首页" ></a></div>
+      <div id="menuboxfix">
+        <ul>
+          <li><a href="/paperprint/" class="hovfix">纸纹防伪</a></li>
+          <li><a href="/mpayment/">移动支付</a></li>
+          <li><a href="/mstp/">移动互联</a></li>
+          <li><a href="/dss/">支付安全</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="header_line"></div>
+</div>
+
+<!--=============头部导航===============-->
+<div id="header_f1">
+  <div id="header_blbg"></div>
+  <div id="header_main">
+    <div class="center">
+      <div id="sinologo"><a href="/" title="返回首页" ></a></div>
+      <div id="menubox">
+        <ul>
+          <li><a href="/paperprint/" class="hov">纸纹防伪</a></li>
+          <li><a href="/mpayment/">移动支付</a></li>
+          <li><a href="/mstp/">移动互联</a></li>
+          <li><a href="/dss/">支付安全</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--=============main===============-->
+<div class="protopban papertop">
+  <div class="center" style="height:650px; position:relative;">
+    <div class="paperlogo"><img src="images/paperlogo.png"/></div>
+    <div class="papertitle white">
+      <h1>纸纹<span style="vertical-align:1.1em; font-size:20px; padding:0 3px 0 3px; font-family:'微软雅黑';">®</span>引领物质特征识别新时代，颠覆性的防伪技术</h1>
+      <p>兆日科技历经10余年研发，革命性地解决了纸张自然纤维纹理特征的提取和特征模型的算法构造难题，成功发明了世界领先的纸纹<span style="vertical-align:0.4em; font-size:12px; padding:0 3px 0 1px;">®</span>特征识别技术，并不断推出基于纸纹技术的防伪产品。它们可广泛适用于票据防伪，商品防伪等领域。</p>
+    </div>
+  </div>
+</div>
+
+<div class="main_650 p1">
+  <div class="center box">
+    <div class="textbox t1">
+      <h2>什么是纸纹<span style="vertical-align:1.1em; font-size:20px; padding:0 0 0 3px; font-family:'微软雅黑';">®</span><span class="fu">？</span></h2>
+      <p>纸纹<span style="vertical-align:0.4em; font-size:12px; padding:0 3px 0 1px;">®</span>是纸张自然纤维独特的纹理分布，是上帝（自然）赐予每张纸独一无二的DNA，它是自然形成而非人为制造的，因而人类无法复制或克隆纸纹<span style="vertical-align:0.4em; font-size:12px; padding:0 3px 0 1px;">®</span>。<br />
+        纸纹<span style="vertical-align:0.4em; font-size:12px; padding:0 3px 0 1px;">®</span>，由于其随机性、唯一性、稳定性和无法复制的特点，可广泛应用于票据、商品等防伪领域。</p>
+      <p style="padding-left:35px; background:url(images/video.png) no-repeat left 20px;"><a href="javascript:void(0)" onclick="showid('win_video');" style="color:#0e7be1;">观看纸纹视频>></a></p>
+    </div>
+  </div><div class="clear"></div>
+</div>
+
+<div class="main_650 p2">
+  <div class="center box">
+    <div class="textbox t2 white">
+      <h2>纸纹<span style="vertical-align:1.1em; font-size:20px; padding:0 3px 0 3px; font-family:'微软雅黑';">®</span>的特点</h2>
+      <p>随机、唯一、稳定和无法复制。纸张纤维来自于广袤的大自然，纤维形态细微、多样，纤维在纸张中随机地纵横交织在三维空间中，而形成独特的、不受人为控制的纤维分布结构。纸纹<span style="vertical-align:0.4em; font-size:12px; padding:0 3px 0 1px;">®</span>，如同人类的指纹、虹膜、视网膜等，独一无二，永不改变，同属特征识别技术。</p>
+      <div class="p2ico">
+        <ul>
+          <li style="background-position:0 0;">随机性</li>
+          <li style="background-position:-117px 0;">唯一性</li>
+          <li style="background-position:-234px 0;">稳定性</li>
+          <li style="background-position:-348px 0;">无法复制</li>
+        </ul>
+      </div>
+    </div>
+  </div><div class="clear"></div>
+</div>
+
+<div class="main_650 p3">
+  <div class="center box">
+    <div class="textbox t3">
+      <h2>纸纹<span style="vertical-align:1.1em; font-size:20px; padding:0 3px 0 3px; font-family:'微软雅黑';">®</span>技术由兆日独创</h2>
+      <p>本世纪初，兆日科技申请了第一个关于纸张纹理特征识别的发明专利，并在今后十余年里相继获得此类技术的20余项专利；2011年，兆日成功研发出全球首款纸张自然纹理传感器，继而又成功建立了一整套纸纹<span style="vertical-align:0.4em; font-size:12px; padding:0 3px 0 1px;">®</span>的物理特征模型、数学模型和特征识别技术，并将该项技术正式命名为纸纹<span style="vertical-align:0.4em; font-size:12px; padding:0 3px 0 1px;">®</span>（PaperPrint<span style="vertical-align:0.4em; font-size:12px; padding:0 3px 0 1px;">®</span>）。</p>
+      <p><a href="http://digi.163.com/13/0923/11/99F21SSQ00163HED.html" target="_blank" style="color:#0e7be1;" rel="nofollow">兆日科技亮相金融展>></a></p>
+    </div>
+  </div><div class="clear"></div>
+</div>
+
+<div class="main_650 p4">
+  <div class="center box">
+    <div class="textbox t4 white">
+      <h2>纸纹<span style="vertical-align:1.1em; font-size:20px; padding:0 3px 0 3px; font-family:'微软雅黑';">®</span><span class="fu">——</span>无法攻破的防伪技术</h2>
+      <p>人类迄今已发明了众多防伪技术，它们几乎都是利用某种人造的复杂特征来阻吓伪造，例如在被保护物上印刷复杂的图案（如各种条码、激光全息）、使用具有特殊光学特性的油墨（如红外隐形油墨）、附着芯片等，但过去几十年的防伪实践清楚地表明，这些技术收效甚微，且大都被伪造者攻破，伪造商品日益泛滥。之所以这些传统的防伪技术收效甚微，是因为它们都是利用了某些人为制造的材料或特征物来防伪，而从理论和实践上来看，只要是人为制造的东西，你能够制造的东西别人就一定可以仿制。伪造的本质就是仿制或克隆......<span style="padding-left:10px;"><a href="javascript:void(0)" onclick="showid('win_a1');">了解更多 >></a></span></p>
+      <!--<div class="p4ico">
+        <ul>
+          <li style="background-position:0 0;">指纹</li>
+          <li style="background-position:-153px 0;">虹膜</li>
+          <li style="background-position:-297px 0;">DNA</li>
+        </ul>
+      </div>-->
+    </div>
+    <div class="p4img"><img src="images/paperlogo.png" /></div>
+  </div><div class="clear"></div>
+</div>
+<!--弹a1-->
+<div id="win_a1" class="window">
+  <div class="closebtn"><a onclick="$('#layer,#win_a1').hide();" href="javascript:void(0);" title="关闭"></a></div>
+  <div class="winbg">
+    <div class="winamin">
+      <div class="wintitle">纸纹<span style="vertical-align:1.2em; font-size:16px; padding:0 5px 0 3px;">®</span>——无法攻破的防伪技术</div>
+      <p>人类迄今已发明了众多防伪技术，它们几乎都是利用某种人造的复杂特征来阻吓伪造，例如在被保护物上印刷复杂的图案（如各种条码、激光全息）、使用具有特殊光学特性的油墨（如红外隐形油墨）、附着芯片等，但过去几十年的防伪实践清楚地表明，这些技术收效甚微，且大都被伪造者攻破，伪造商品日益泛滥。之所以这些传统的防伪技术收效甚微，是因为它们都是利用了某些人为制造的材料或特征物来防伪，而从理论和实践上来看，只要是人为制造的东西，你能够制造的东西别人就一定可以仿制。伪造的本质就是仿制或克隆。</p>
+      <p>与任何人为制造的材料或特征物不同，纸纹<span style="vertical-align:0.4em; font-size:12px; padding:0 3px 0 1px;">®</span>是自然形成而非人为的，它具有随机、唯一和稳定性，更重要的是纸纹<span style="vertical-align:0.4em; font-size:12px; padding:0 3px 0 1px;">®</span>的三维复杂分布结构使得它具有不可复制性，这样纸纹<span style="vertical-align:0.4em; font-size:12px; padding:0 3px 0 1px;">®</span>技术从理论和实践上杜绝了复制的可能性，使其成为无法被彻底攻破的防伪技术。
+        纸纹<span style="vertical-align:0.4em; font-size:12px; padding:0 3px 0 1px;">®</span>防伪技术无需在被保护物上印刷任何内容，也无需在被保护物上附着、添加任何其他特殊物质，无需改变被保护物原有的形态，具有极高的经济性和广泛的适应性，它非常适合用于保护纸质票据、文件、艺术品以及商品的防伪证书和防伪标签。</p>
+    </div>
+  </div>
+</div>
+<a name="pro" id="pro"></a>
+<div class="main_650 p5">
+  <div class="center box">
+    <div class="textbox t5">
+      <h2>金融票据纸纹<span style="vertical-align:1.1em; font-size:20px; padding:0 3px 0 3px; font-family:'微软雅黑';">®</span>防伪系统</h2>
+      <p>纸纹<span style="vertical-align:0.4em; font-size:12px; padding:0 3px 0 1px;">®</span>技术在金融票据防伪领域的一个应用产品，全球自动化程度最高、唯一可同时防范伪造、变造和克隆票据的防伪系统。</p>
+      <div class="p5ico">
+        <ul>
+          <li style="background-position:40px 0;">能够识别任意类型的票据和凭证，甚至可以用于保护无防伪印刷的空白票据与凭证</li>
+          <li style="background-position:-245px 0;">唯一采用物联网技术实现云中心数据处理的票据防伪系统</li>
+          <li style="background-position:-530px 0;">可适应金融机构集中开票/验票、分散开票/验票、集中+分散管理的多种运营模式</li>
+          <li style="margin-right:0px; background-position:-816px 0;">全智能化自动识别，对操作人员票据鉴别技能要求极低</li>
+        </ul>
+      </div>
+    </div>
+  </div><div class="clear"></div>
+</div>
+
+<div class="main_750 p6">
+  <div class="center box">
+    <div class="textbox t6 white">
+      <h2>唯一采用物联网技术实现云中<br />心数据处理的票据防伪系统</h2>
+      <p>系统采用业界领先的云平台技术，实现物质特征数据云中心处理。所有终端接入互联网，支持点-点、点-中心、中<br />心-中心的网络结构，可适应金融机构集中开票/验票、分散开票/验票、集中+分散管理的多种运营模式。</p>
+      <p><img src="images/p6img.png" /></p>
+    </div>
+  </div><div class="clear"></div>
+</div>
+
+<div class="main_800 p7">
+  <div class="center box">
+    <div class="textbox t7">
+      <h2>自动化识别任意纸质凭证特征和票面信息</h2>
+      <p>票据纸纹<span style="vertical-align:0.4em; font-size:12px; padding:0 3px 0 1px;">®</span>防伪系统的终端设备具有自动提取票据纸纹<span style="vertical-align:0.4em; font-size:12px; padding:0 3px 0 1px;">®</span>特征和票面影像的功能，同时还具备自动鉴别纸纹<span style="vertical-align:0.4em; font-size:12px; padding:0 3px 0 1px;">®</span>和票面要素完整性的功能。在联网环境下，它可将提取的纸纹<span style="vertical-align:0.4em; font-size:12px; padding:0 3px 0 1px;">®</span>信息与票面影像信息自动上传数据中心或其他需要的网点终端，以方便其他网点或机构跨地区、跨行验证票据真伪；此外，终端设备还可以提供多光谱照射下的高清票据影像，辅助人工核查票据防伪印刷标记、荧光纤维、荧光油墨、金属线等。</p>
+    </div>
+    <div class="t7_2"><span>票据纸纹<span style="vertical-align:0.7em; font-size:14px; padding:0 3px 0 1px;">®</span>防伪系统</span><br />
+      不仅能够应用在本票、汇票、支票上，还可以用于存单等重空凭证。其基于物质特征识别技术的特点，决定了票据纸纹防伪系统具有良好的扩展性，可以运用在现在的、未来的任意纸质凭证上。</div>
+  </div><div class="clear"></div>
+</div>
+
+<div class="main_750 p8">
+  <div class="center box">
+    <div class="textbox t8 white">
+      <h2>全面防护来自银行外部及<br />内部的票据及凭证风险</h2>
+      <p style="line-height:25px;">票据纸纹<span style="vertical-align:0.4em; font-size:12px; padding:0 3px 0 1px;">®</span>防伪系统，将引领传统票据防伪技术跨进基于物质特征识别技术的防伪新时代。</p>
+      <p style="font-size:14px; line-height:22px; margin-top:20px;"><strong>1）提升安全：</strong>基于物质特征识别技术，精准识别纸张独一无二的特征；智能化快速准确地检测出克隆票，伪造票和变造票，是目前最完整有效的票据防伪解决方案。</p>
+      <p style="font-size:14px; line-height:22px; margin-top:15px;"><strong>2）加强内控：</strong>通过对银行票据，例如本票、汇票、支票，以及存单等重空凭证的流转过程的全面管理增强内控，包括基于物质特征识别技术的空白票据管理和票据签发管理；基于全智能化识别和物联网技术的客户票据签收管理；采用互联网云中心数据处理的票据承兑管理。</p>
+      <p style="font-size:14px; line-height:22px; margin-top:15px;"><strong>3）提高效率、降低成本：</strong>银行票据往往具有信用高、金额巨大和见票即付的特点，传统票据验证往往对柜员提出了极高的技术要求和带来巨大工作压力；使用票据纸纹<span style="vertical-align:0.4em; font-size:11px; padding:0 3px 0 1px;">®</span>防伪鉴别技术，可以极大地提高验票的自动化程度和降低对人员的技术要求，可以使原本高级、复杂的验票工作，从少数专家操作、集中式管理的传统模式转型成效率更高、服务更便捷的分散式网点模式，降低成本、提高效率和服务质量。 </p>
+    </div>
+  </div><div class="clear"></div>
+</div>
+
+
+<div id="win_video" class="window">
+  <div class="closebtn"><a onclick="$('#win_video,#layer').hide();show()" value="showSRC" href="javascript:void(0);" title="关闭"></a></div>
+  <div id='v'><embed src="flash/swfplayer.swf" width="1148" height="430" wmode="transparent" allowfullscreen="true"></embed></div>
+  <script>function show(){document.getElementById('v').innerHTML='<embed  src="flash/swfplayer.swf" width="1148" height="430" volume="0" wmode="transparent" allowFullScreen="true"></embed>';}</script>
+</div>
+
+
+<!--=============底部===============-->
+<div id="footer">
+  <div class="center">
+    <div id="footerleft">
+      <div id="footermenu">
+        <ul>
+          <li><a href="/aboutus/">公司简介</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
+          <li><a href="/investor/">投资者关系</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
+          <li><a href="/techdl.asp">技术支持</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;</li>
+          <li><a href="/terms/">法律声明</a></li>
+        </ul>
+      </div><div class="clear"></div>
+
+      <div id="copyright">©2016兆日科技版权所有 <span style="padding:0 15px 0 10px;">鲁ICP备 <a href="http://www.miitbeian.gov.cn" target="_blank" rel="nofollow" style="color:#cacaca; font-family:'微软雅黑'; font-size:12px;">09048172</a>号</span>服务热线：400-0808-887</div>
+
+    </div>
+
+    <div class="footeradd">
+      <div>地址：济南市商贸科技大厦C座16层<br />电话：0531-83415666 <span style="padding-left:15px;">传真：0531-83420054</span></div>
+    </div>
+
+  </div>
+</div>
+
+<!-- 回到头部 -->
+<div id="returnbtn"><a id="return" href="javascript:void(0)" onclick="jQuery('html,body').animate({scrollTop: 0}, 800);"></a></div>
+<!--51la-->
+<div style="display:none;"><script language="javascript" type="text/javascript" src="js/17852147.js"></script>
+  <noscript><a href="http://www.51.la/?17852147" target="_blank"><img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="images/17852147.asp" style="border:none" /></a></noscript></div>
+
+</body>
+<script  type="text/javascript">
+  $youziku.load(".textbox", "ada712774d7c45bdb38a69020f44e655", "msyhl");
+  $youziku.load(".paytitle", "ada712774d7c45bdb38a69020f44e655", "msyhl");
+  $youziku.draw();
+</script>
+<script type="text/javascript">
+  $youzikuapi.asyncLoad("http://api.youziku.com/webfont/FastJS/yzk_B878FA78C59F3B32", function () {
+    $youziku.load(".textbox", "2968386d9c204827819f78be3ed6ab3b", "msyhl");
+    $youziku.load(".paytitle", "2968386d9c204827819f78be3ed6ab3b", "msyhl");
+    $youziku.draw();
+  })
+</script>
+</html>
